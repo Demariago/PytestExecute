@@ -14,3 +14,9 @@ print('hello\rworld')
 print('hello\bworld')
 #想要输出单引号呢，用反斜杠标记为正常内容，非边界
 print('老师说:\'大家好\'')
+
+#原字符，不希望转义生效，加R或者r，注意最后一个字符不能是反斜杠
+print(r'hello\nworld')
+
+
+
