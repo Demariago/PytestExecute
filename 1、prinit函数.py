@@ -9,3 +9,8 @@ fb.close
 print('hello','world')
 #换行输出呢?
 print('hello\nworld')
+
+#print可以输出数字，字符串，运算符(加引号的意思是原样输出)
+print(444)
+print('string')
+print(4+6)
