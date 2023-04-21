@@ -48,7 +48,10 @@ print(False+1)
 #单引号双引号的字符串必须在一行
 #三引号的可以在多行，解释如下代码
 
-
-
-
+str1='人生苦短，我用python'
+str2="人生苦短，我用python"
+print(str1,type(str1),str2,type(str2))
+str3="""人生苦短，
+我用python"""
+print(str3,type(str3))
 
