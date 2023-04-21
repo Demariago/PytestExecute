@@ -10,3 +10,4 @@ name ='maliya'
 print('值',name)
 print('标识',id(name))
 print('类型',type(name))
+#如上有助于理解内存的概念  id+type+value
