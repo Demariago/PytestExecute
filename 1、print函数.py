@@ -14,3 +14,6 @@ print('hello\nworld')
 print(444)
 print('string')
 print(4+6)
+n1='wode'
+n2='python'
+print(n1,n2)
