@@ -4,7 +4,8 @@ print('helloword',file=fb)
 fb.close
 #注意1是盘符要存在，2是使用file=
 
+
 #不进行换行输出，则加逗号
 print('hello','world')
 #换行输出呢?
-print('hello\n','world')
+print('hello\nworld')
