@@ -10,7 +10,7 @@ print('helloooo\tworld')#解释制表符的含义,每四个
 print('he\tworld')
 #r  return回车 将光标定位到该行初始位置
 print('hello\rworld')
-#\b  退一个格的含义
+#\b  退一个格的含义 back
 print('hello\bworld')
 #想要输出单引号呢，用反斜杠标记为正常内容，非边界
 print('老师说:\'大家好\'')
