@@ -24,3 +24,12 @@ print('-----其他的对象的布尔值均为True-----')
 print(bool(18))
 print(bool(True))
 print(bool('helloworld'))
+
+
+#再详细的理解下bool值
+print('仔细理解对象的bool值')
+age=int(input('输入年龄：'))#当键盘输入为0时，bool判断为False，走的是else的分支
+if age:
+    print(age)
+else:
+    print('年龄为',age)
