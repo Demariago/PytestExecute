@@ -8,7 +8,7 @@
 money=1000#卡余额
 s=int(input('输入取款金额：'))#取款金额，int类型
 #判断余额充足与否
-if money>=s: #条件表达式，>=是比较运算符，参见11文件，比较的是value值，然后结果是True或者False
+if money>=s: #条件表达式，>=是比较运算符，参见11文件，比较的是value值，然后结果是True或者False，True的话就往下执行
    money=money-s
    print('取款成功，余额是：',money)
 
