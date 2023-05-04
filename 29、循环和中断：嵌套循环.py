@@ -4,9 +4,9 @@
 #用*打印一个三行四列的矩形
 for i in  range(1,4):
     for j in range(1,5):
-        print('*',end='\t')
+        print('*',end='\t')#注意print('*')是自带换行的。
     else:
-        print()
+        print()#换行
 #和下面的代码做个区分：注意else的位置
 print('区分的代码注意else的位置')
 for i in  range(1,4):

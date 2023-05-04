@@ -17,7 +17,7 @@ sum=0
 '条件判断'
 while a<=100:
     '条件执行体（求和）'
-    if a%2==0:#或者写成 if a%2: ;还可以这么写 if not bool(a%2)
+    if a%2==0:#写成 if a%2:就是计算奇数和了(bool(0))结果为False;还可以这么写 if not bool(a%2)计算偶数和
        sum+=a
     '改变变量'
     a+=1

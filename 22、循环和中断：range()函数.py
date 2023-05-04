@@ -21,3 +21,4 @@ print('10在不在序列中',10 in r)
 print('9在序列中',9 in r)
 
 #range优点：range存储空间和list序列有多长无关，只存储start，stop，step，内存是一样的；只有在使用range对象时才计算相关元素
+#特别强调，range(1,1)是没有任何整数赋值的！！！！

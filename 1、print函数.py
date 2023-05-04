@@ -17,3 +17,6 @@ print(4+6)
 n1='wode'
 n2='python'
 print(n1,n2)
+print("*",end='\t')
+print()
+print()
