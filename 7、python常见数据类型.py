@@ -55,3 +55,5 @@ str3="""人生苦短，
 我用python"""
 print(str3,type(str3))
 
+
+
