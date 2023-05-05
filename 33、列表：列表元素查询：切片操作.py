@@ -26,8 +26,8 @@ print(lst[-2::-3])
 print(lst[::-1])#列表倒排了，逆序输出
 print(lst[8::-1])#同上面的逆序效果
 
-print(lst[6:0:-2])#注意和下面的不同
-print(lst[6::-2])#注意和上面的不同
+print(lst[6:0:-2])#注意和下面的不同!!!
+print(lst[6::-2])#注意和上面的不同!!!
 print(lst[1::])
 print(lst[1:])
 

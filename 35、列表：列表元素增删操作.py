@@ -27,7 +27,7 @@ print(lst)
 
 lst3=[True,False,'hello']
 lst[1:]=lst3#注意：切掉的部分用新列表替换
-print(lst)
+print('切掉的替换',lst)
 
 
 
@@ -70,9 +70,9 @@ new_lst=lst10[1:3]
 print(new_lst)
 
 print('-----切片删除，不产生新列表如何写------')
-print('原数组',lst10)
+print('原列表',lst10)
 lst10[1:3]=[]#把空列表赋值给切出来的元素！！！！！！！！
-print(lst10)
+print('原列表用空列表替换切出来的位置',lst10)
 
 lst10.clear()
 print(lst10)
