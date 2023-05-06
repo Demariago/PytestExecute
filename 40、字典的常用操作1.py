@@ -35,7 +35,7 @@ print(scores)
 
 #scores.clear() 清空字典
 
-scores['麻七']=998#修改和条件都可以这么来
+scores['麻七']=998#修改和添加都可以这么来
 print(scores)
 
 scores['王五']=876#修改value
