@@ -23,12 +23,14 @@ print(list(items))#转换之后的是由元组组成的
 
 
 
-
 """
 字典元素的遍历
 """
 #获取的是字典中的键
+print('==========================')
 for item in scores:
     print(item)
 #获取字典中的values呢
     print(scores[item])
+#key和value一一对应打印呢？
+    print(item,'分值是：',scores[item])
