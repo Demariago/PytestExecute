@@ -18,11 +18,11 @@ lst = [
     }
     ]
 #print(lst)
-for item in lst:
-    #print(item)#字典类型，两个字典
-    for keys in item:
+for dict in lst:
+    #print(dict)#字典类型，两个字典
+    for keys in dict:
         #print(keys) #打印所有的字典的key的值
-       print(keys,'数值是',item[keys])#item[keys]是字典的value的值
+       print(keys,'数值是',dict[keys])#item[keys]是字典的value的值
 
 
 
