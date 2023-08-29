@@ -18,5 +18,4 @@ n1='wode'
 n2='python'
 print(n1,n2)
 print("*",end='\t')
-print()
-print()
+print()#自带换行
