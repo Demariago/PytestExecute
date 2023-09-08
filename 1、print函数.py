@@ -19,3 +19,4 @@ n2='python'
 print(n1,n2)
 print("*",end='\t')
 print()#自带换行
+print(1234)
