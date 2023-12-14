@@ -29,7 +29,7 @@ print(bool('helloworld'))
 #再详细的理解下bool值
 print('仔细理解对象的bool值')
 age=int(input('输入年龄：'))#当键盘输入为0时，bool判断为False，走的是else的分支
-if age:
+if age:#输入年龄为0时，bool(0)结果是false所以走了else分支，参见line9
     print(age)
 else:
     print('年龄为',age)

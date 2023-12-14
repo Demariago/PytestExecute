@@ -26,3 +26,43 @@ else:
         print('请您支付',int(money*0.95))
     else:
         print('请您支付',money)
+
+
+
+"""嵌套分支
+print('-----嵌套分支-----')
+
+while True:
+    try:
+        is_vip = int(input('是会员请按1，非会员请按0:'))
+        if is_vip == 1 or is_vip == 0:
+            break
+        else:
+            print('输入无效，请重新输入。')
+    except ValueError:
+        print('输入无效，请重新输入。')
+
+while True:
+    try:
+        money = int(input('请输入消费金额:'))
+        break
+    except ValueError:
+        print('输入无效，请重新输入。')
+
+if is_vip == 1:
+    if money >= 200:
+        discount = 0.8
+    elif money >= 100:
+        discount = 0.9
+    else:
+        discount = 1
+else:
+    if money >= 200:
+        discount = 0.95
+    else:
+        discount = 1
+
+final_price = int(money * discount)
+print('请您支付', final_price)
+
+嵌套分支"""
