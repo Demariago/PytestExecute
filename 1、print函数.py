@@ -1,7 +1,7 @@
 #数据输入文件
 fb=open('D:/text.txt','a+')#文件不存在就创建，在的话就追加内容
 print('helloword',file=fb)
-fb.close
+fb.close()
 #注意1是盘符要存在，2是使用file=
 
 
