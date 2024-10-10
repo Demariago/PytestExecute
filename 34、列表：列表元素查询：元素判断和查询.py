@@ -7,3 +7,10 @@ print('www' not in lst)#True
 
 for item in lst:
     print(item)#遍历元素
+
+
+vowles=['a','e','i','o','u']
+word='Milliways'
+for letters in word:
+    if letters in vowles:
+        print(letters)
