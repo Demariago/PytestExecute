@@ -1,1 +1,6 @@
-#git 验证#
+"""
+git add
+git commit
+git push
+git pulll
+"""
