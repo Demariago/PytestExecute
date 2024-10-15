@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91744376-bffd-46e5-b6b4-570ba7f294f1" name="Default Changelist" comment="1">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo016.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo016.py" afterDir="false" />
-    </list>
+    <list default="true" id="91744376-bffd-46e5-b6b4-570ba7f294f1" name="Default Changelist" comment="0123" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -193,7 +190,7 @@
     </option>
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="myl_001" />
+    <option name="BRANCH" value="master" />
   </component>
   <component name="Git.Settings">
     <option name="PUSH_TAGS">
@@ -800,7 +797,7 @@
       <option name="project" value="LOCAL" />
       <updated>1693811188553</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -914,7 +911,8 @@
     <MESSAGE value="5月4日" />
     <MESSAGE value="2023年5月15日" />
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="0123" />
+    <option name="LAST_COMMIT_MESSAGE" value="0123" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/34、列表：列表元素查询：元素判断和查询.py">
