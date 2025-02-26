@@ -11,8 +11,8 @@ a=1
 while a<10:#10<10的boll值判断为False，跳出循环了
     print(a,end=' ')
     a+=1
-print()
-
+print()#打印换行
+print('结束了')
 #if和while的区别：一个执行一次，一个执行多次；while是判断N+1次，执行N次
 
 
