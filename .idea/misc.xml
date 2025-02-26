@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Black">
-    <option name="sdkUUID" value="dbb2c171-419d-48fa-a0eb-535eddc50882" />
+    <option name="sdkName" value="Python 3.8 (demo4)" />
   </component>
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.11 (KK_AutoTest)" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.8 (demo4)" project-jdk-type="Python SDK" />
 </project>
