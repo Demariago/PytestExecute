@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91744376-bffd-46e5-b6b4-570ba7f294f1" name="Default Changelist" comment="99887766">
+    <list default="true" id="91744376-bffd-46e5-b6b4-570ba7f294f1" name="Default Changelist" comment="98">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -517,7 +517,7 @@
       <workItem from="1753147567622" duration="333000" />
       <workItem from="1753147907106" duration="4284000" />
       <workItem from="1753154079174" duration="7408000" />
-      <workItem from="1753165239810" duration="708000" />
+      <workItem from="1753165239810" duration="2384000" />
     </task>
     <task id="LOCAL-00002" summary="1">
       <created>1681890277368</created>
@@ -862,7 +862,7 @@
       <option name="project" value="LOCAL" />
       <updated>1693811188553</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -984,7 +984,8 @@
     <MESSAGE value="myl9988" />
     <MESSAGE value="00998" />
     <MESSAGE value="99887766" />
-    <option name="LAST_COMMIT_MESSAGE" value="99887766" />
+    <MESSAGE value="98" />
+    <option name="LAST_COMMIT_MESSAGE" value="98" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/34、列表：列表元素查询：元素判断和查询.py">
