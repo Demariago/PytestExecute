@@ -1,4 +1,4 @@
-#001#
+#myl_001#
 #数据输入文件
 fb=open('D:/text.txt','a+')#文件不存在就创建，在的话就追加内容
 print('helloword',file=fb)
