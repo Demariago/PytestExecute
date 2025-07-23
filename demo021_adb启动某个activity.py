@@ -5,8 +5,8 @@ from datetime import datetime
 # 定义应用包名和目标 Activity 名称
 package_name = "com.youxiang.soyoungapp"
 activity_name = "com.soyoung.product.ProductDetailV2Activity"
-# 定义 Windows 下存储日志的文件路径
-log_file_path = f"D:\\360Downloads\\adb_log_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
+# 定义 macOS 下存储日志的文件路径
+log_file_path = f"/Users/longzhan/Downloads/adb_log_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
 
 def clear_logcat():
     """
@@ -23,7 +23,7 @@ def get_app_logs():
     获取应用相关的 logcat 日志
     """
     try:
-        command = f'adb logcat -d | findstr "{package_name}"'
+        command = f'adb logcat -d | grep "{package_name}"'  # 将 findstr 替换为 grep
         result = subprocess.run(command, shell=True, capture_output=True, text=True, encoding='utf-8', check=True)
         return result.stdout
     except subprocess.CalledProcessError as e:
