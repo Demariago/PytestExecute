@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91744376-bffd-46e5-b6b4-570ba7f294f1" name="Default Changelist" comment="验证本地将远端的代码push成最新的">
+      <change afterPath="$PROJECT_DIR$/text.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -333,7 +334,7 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "myl__001",
     "last_opened_file_path": "C:/Users/Demaria/Desktop/monkey 2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -520,6 +521,7 @@
       <workItem from="1753147907106" duration="4284000" />
       <workItem from="1753154079174" duration="7408000" />
       <workItem from="1753165239810" duration="2384000" />
+      <workItem from="1753406247505" duration="1563000" />
     </task>
     <task id="LOCAL-00002" summary="1">
       <created>1681890277368</created>
