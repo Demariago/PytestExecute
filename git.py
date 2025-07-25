@@ -1,11 +1,10 @@
 """
-git add
-git commit
-git push
+git add .
+git commit -m '修复bug'
+git push/ git push origin master
 git pulll
-myl_001
-myl_002
-myl_0003
+git checkout myl_001
+git merge master
 验证merge代码
 """
 
