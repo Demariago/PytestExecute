@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91744376-bffd-46e5-b6b4-570ba7f294f1" name="Default Changelist" comment="验证本地将远端的代码push成最新的">
-      <change afterPath="$PROJECT_DIR$/text.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -521,7 +520,7 @@
       <workItem from="1753147907106" duration="4284000" />
       <workItem from="1753154079174" duration="7408000" />
       <workItem from="1753165239810" duration="2384000" />
-      <workItem from="1753406247505" duration="1563000" />
+      <workItem from="1753406247505" duration="2554000" />
     </task>
     <task id="LOCAL-00002" summary="1">
       <created>1681890277368</created>
@@ -866,7 +865,7 @@
       <option name="project" value="LOCAL" />
       <updated>1693811188553</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -990,7 +989,8 @@
     <MESSAGE value="99887766" />
     <MESSAGE value="98" />
     <MESSAGE value="修改为适用于macos的代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改为适用于macos的代码" />
+    <MESSAGE value="验证本地将远端的代码push成最新的" />
+    <option name="LAST_COMMIT_MESSAGE" value="验证本地将远端的代码push成最新的" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PytestExecute$28else.coverage" NAME="28、循环和中断：else语句 Coverage Results" MODIFIED="1753254726792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
