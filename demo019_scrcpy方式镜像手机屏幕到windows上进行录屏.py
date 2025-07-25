@@ -14,7 +14,7 @@ async def start_scrcpy_recording(save_path, video_filename="recording.mp4"):
     video_save_path_local = os.path.join(save_path, video_filename)
 
     # 修改为 scrcpy 的完整路径
-    scrcpy_path = r"D:\scrcpy-win64-v3.1\scrcpy.exe"  # 根据实际安装路径修改
+    scrcpy_path = "scrcpy"  # 根据实际安装路径修改
 
     # 启动 scrcpy 录制
     command = [
@@ -46,7 +46,7 @@ async def start_scrcpy_recording(save_path, video_filename="recording.mp4"):
 
 async def main():
     app_package = "com.youxiang.soyoungapp/com.soyoung.module_main.ui.SplashActivity"  # 你的包名和启动 Activity
-    save_path = r"D:\2"  # 本地保存录制视频的目录
+    save_path = "./recordings"  # 本地保存录制视频的目录
     video_filename = "recording.mp4"  # 保存的文件名
 
     # 启动应用
