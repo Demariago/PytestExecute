@@ -18,5 +18,12 @@ headers = {
 }
 
 url = "http://test.zhongautohealth.com/navis-gateway-app/api/user/health/simple/Info"
-resp = requests.get(url, headers=headers)
-print(resp.json())
+
+try:
+    resp = requests.get(url, headers=headers)
+    resp.raise_for_status()
+    print(resp.json())
+except requests.exceptions.RequestException as e:
+    print(f"请求出错: {e}")
+except ValueError as e:
+    print(f"JSON解析错误: {e}")
