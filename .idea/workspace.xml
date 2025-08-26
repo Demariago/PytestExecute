@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91744376-bffd-46e5-b6b4-570ba7f294f1" name="Default Changelist" comment="8888">
-      <change afterPath="$PROJECT_DIR$/test_soyoung_hospital_info_api.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_soyoung_hotpital_v2_api.py" afterDir="false" />
+    <list default="true" id="91744376-bffd-46e5-b6b4-570ba7f294f1" name="Default Changelist" comment="0987">
+      <change afterPath="$PROJECT_DIR$/pdf.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pdf_ocr.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_soyoung_doctor_info_api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_zhealth_shop_api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -334,6 +336,8 @@
   &quot;keyToString&quot;: {
     &quot;Python tests.pytest for test_soyoung_api.TestSoyoungAPI.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.pytest for test_soyoung_api.TestSoyoungAPI.test_response_data_structure.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_soyoung_doctor_info_api.TestDoctorInfoBasicByDynamic842.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_soyoung_doctor_info_api.TestDoctorInfoBasicByDynamic842.test_normal_request.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.pytest for test_soyoung_hospital_info_api.TestHospitalHomeV2API.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.pytest for test_soyoung_hospital_info_api.TestHospitalHomeV2API.test_invalid_ext_format.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.pytest for test_soyoung_hospital_info_api.TestHospitalHomeV2API.test_invalid_hospital_id.executor&quot;: &quot;Run&quot;,
@@ -351,9 +355,11 @@
     &quot;Python tests.pytest for test_soyoung_hotpital_v2_api.TestHospitalHomeV2API.test_response_structure_integrity.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.pytest for test_zhealth_api.TestMerchantListByPage.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.pytest in demo009.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_soyoung_doctor_info_api.py.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.pytest in test_soyoung_hospital_info_api.py.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.pytest in test_soyoung_hotpital_v2_api.py.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.pytest in test_soyoung_productinfo_api.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_zhealth_shop_api.py.executor&quot;: &quot;Run&quot;,
     &quot;Python.21、程序结构：pass语句.executor&quot;: &quot;Run&quot;,
     &quot;Python.28、循环和中断：else语句.executor&quot;: &quot;Run&quot;,
     &quot;Python.api_requests.executor&quot;: &quot;Run&quot;,
@@ -361,6 +367,7 @@
     &quot;Python.demo017.executor&quot;: &quot;Run&quot;,
     &quot;Python.doc_to_excel.executor&quot;: &quot;Run&quot;,
     &quot;Python.json.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pdf_extract_mixed.executor&quot;: &quot;Run&quot;,
     &quot;Python.rednoot.executor&quot;: &quot;Run&quot;,
     &quot;Python.requests.executor&quot;: &quot;Run&quot;,
     &quot;Python.计算时间戳.executor&quot;: &quot;Run&quot;,
@@ -388,8 +395,31 @@
       </console-settings>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_soyoung_hotpital_v2_api.TestHospitalHomeV2API.test_response_structure_integrity">
-    <configuration name="pytest for test_soyoung_hotpital_v2_api.TestHospitalHomeV2API.test_boundary_value_rank_sco" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.pdf_extract_mixed">
+    <configuration name="pdf_extract_mixed" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python基础" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../pdf_extract_mixed.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_soyoung_doctor_info_api.TestDoctorInfoBasicByDynamic842" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python基础" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -403,11 +433,11 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_soyoung_hotpital_v2_api.TestHospitalHomeV2API.test_boundary_value_rank_sco&quot;" />
+      <option name="_new_target" value="&quot;test_soyoung_doctor_info_api.TestDoctorInfoBasicByDynamic842&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_soyoung_hotpital_v2_api.TestHospitalHomeV2API.test_cache_and_performance" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_soyoung_doctor_info_api.TestDoctorInfoBasicByDynamic842.test_normal_request" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python基础" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -421,11 +451,11 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_soyoung_hotpital_v2_api.TestHospitalHomeV2API.test_cache_and_performance&quot;" />
+      <option name="_new_target" value="&quot;test_soyoung_doctor_info_api.TestDoctorInfoBasicByDynamic842.test_normal_request&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_soyoung_hotpital_v2_api.TestHospitalHomeV2API.test_invalid_timestamp" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest in test_soyoung_doctor_info_api.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python基础" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -439,11 +469,11 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_soyoung_hotpital_v2_api.TestHospitalHomeV2API.test_invalid_timestamp&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_soyoung_doctor_info_api.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_soyoung_hotpital_v2_api.TestHospitalHomeV2API.test_response_structure_integrity" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest in test_zhealth_shop_api.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python基础" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -457,35 +487,17 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_soyoung_hotpital_v2_api.TestHospitalHomeV2API.test_response_structure_integrity&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest in test_soyoung_hotpital_v2_api.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="python基础" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_soyoung_hotpital_v2_api.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_zhealth_shop_api.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for test_soyoung_hotpital_v2_api.TestHospitalHomeV2API.test_response_structure_integrity" />
-        <item itemvalue="Python tests.pytest in test_soyoung_hotpital_v2_api.py" />
-        <item itemvalue="Python tests.pytest for test_soyoung_hotpital_v2_api.TestHospitalHomeV2API.test_cache_and_performance" />
-        <item itemvalue="Python tests.pytest for test_soyoung_hotpital_v2_api.TestHospitalHomeV2API.test_boundary_value_rank_sco" />
-        <item itemvalue="Python tests.pytest for test_soyoung_hotpital_v2_api.TestHospitalHomeV2API.test_invalid_timestamp" />
+        <item itemvalue="Python.pdf_extract_mixed" />
+        <item itemvalue="Python tests.pytest in test_zhealth_shop_api.py" />
+        <item itemvalue="Python tests.pytest for test_soyoung_doctor_info_api.TestDoctorInfoBasicByDynamic842.test_normal_request" />
+        <item itemvalue="Python tests.pytest for test_soyoung_doctor_info_api.TestDoctorInfoBasicByDynamic842" />
+        <item itemvalue="Python tests.pytest in test_soyoung_doctor_info_api.py" />
       </list>
     </recent_temporary>
   </component>
@@ -544,6 +556,7 @@
       <workItem from="1755574957531" duration="2072000" />
       <workItem from="1755652917275" duration="14566000" />
       <workItem from="1756085595974" duration="6382000" />
+      <workItem from="1756199834741" duration="1511000" />
     </task>
     <task id="LOCAL-00002" summary="1">
       <created>1681890277368</created>
@@ -888,7 +901,7 @@
       <option name="project" value="LOCAL" />
       <updated>1693811188553</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1019,7 +1032,8 @@
     <MESSAGE value="0948" />
     <MESSAGE value="9999" />
     <MESSAGE value="8888" />
-    <option name="LAST_COMMIT_MESSAGE" value="8888" />
+    <MESSAGE value="0987" />
+    <option name="LAST_COMMIT_MESSAGE" value="0987" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PytestExecute$pytest_for_test_zhealth_api_TestMerchantListByPage.coverage" NAME="pytest for test_zhealth_api.TestMerchantListByPage Coverage Results" MODIFIED="1755657199790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -1031,7 +1045,9 @@
     <SUITE FILE_PATH="coverage/PytestExecute$pytest_for_test_soyoung_api_TestSoyoungAPI.coverage" NAME="pytest for test_soyoung_api.TestSoyoungAPI Coverage Results" MODIFIED="1754879199772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PytestExecute$pytest_for_test_soyoung_hotpital_v2_api_TestHospitalHomeV2API_test_response_structure_integrity.coverage" NAME="pytest for test_soyoung_hotpital_v2_api.TestHospitalHomeV2API.test_response_structure_integrity Coverage Results" MODIFIED="1756104779301" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PytestExecute$pytest_for_test_soyoung_hospital_info_api_TestHospitalHomeV2API_test_invalid_hospital_id.coverage" NAME="pytest for test_soyoung_hospital_info_api.TestHospitalHomeV2API.test_invalid_hospital_id Coverage Results" MODIFIED="1756103093398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PytestExecute$pytest_in_test_zhealth_shop_api_py.coverage" NAME="pytest in test_zhealth_shop_api.py Coverage Results" MODIFIED="1756197758119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PytestExecute$json.coverage" NAME="json Coverage Results" MODIFIED="1755851299150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PytestExecute$pdf_extract_mixed.coverage" NAME="pdf_extract_mixed Coverage Results" MODIFIED="1756197928896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
     <SUITE FILE_PATH="coverage/PytestExecute$pytest_in_test_soyoung_productinfo_api_py.coverage" NAME="pytest in test_soyoung_productinfo_api.py Coverage Results" MODIFIED="1755669429510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PytestExecute$28else.coverage" NAME="28、循环和中断：else语句 Coverage Results" MODIFIED="1753254726792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PytestExecute$21pass.coverage" NAME="21、程序结构：pass语句 Coverage Results" MODIFIED="1753254711718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -1040,6 +1056,7 @@
     <SUITE FILE_PATH="coverage/PytestExecute$doc_to_excel.coverage" NAME="doc_to_excel Coverage Results" MODIFIED="1756089003406" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PytestExecute$pytest_for_test_soyoung_hospital_info_api_TestHospitalHomeV2API_test_normal_request.coverage" NAME="pytest for test_soyoung_hospital_info_api.TestHospitalHomeV2API.test_normal_request Coverage Results" MODIFIED="1756089914152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PytestExecute$pytest_for_test_soyoung_hospital_info_api_TestHospitalHomeV2API_test_invalid_request_key.coverage" NAME="pytest for test_soyoung_hospital_info_api.TestHospitalHomeV2API.test_invalid_request_key Coverage Results" MODIFIED="1756103531407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PytestExecute$pytest_for_test_soyoung_doctor_info_api_TestDoctorInfoBasicByDynamic842_test_normal_request.coverage" NAME="pytest for test_soyoung_doctor_info_api.TestDoctorInfoBasicByDynamic842.test_normal_request Coverage Results" MODIFIED="1756110672757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PytestExecute$pytest_for_test_soyoung_hospital_info_api_TestHospitalHomeV2API.coverage" NAME="pytest for test_soyoung_hospital_info_api.TestHospitalHomeV2API Coverage Results" MODIFIED="1756101833178" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PytestExecute$demo017.coverage" NAME="requests Coverage Results" MODIFIED="1753667560292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PytestExecute$pytest_in_demo009_py.coverage" NAME="pytest in demo009.py Coverage Results" MODIFIED="1754876547990" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -1048,8 +1065,10 @@
     <SUITE FILE_PATH="coverage/PytestExecute$pytest_for_test_soyoung_hotpital_v2_api_TestHospitalHomeV2API_test_normal_request_success.coverage" NAME="pytest for test_soyoung_hotpital_v2_api.TestHospitalHomeV2API.test_normal_request_success Coverage Results" MODIFIED="1756092383582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PytestExecute$pytest_for_test_soyoung_hotpital_v2_api_TestHospitalHomeV2API_test_invalid_timestamp.coverage" NAME="pytest for test_soyoung_hotpital_v2_api.TestHospitalHomeV2API.test_invalid_timestamp Coverage Results" MODIFIED="1756104085720" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PytestExecute$pytest_for_test_soyoung_hospital_info_api_TestHospitalHomeV2API_test_invalid_ext_format.coverage" NAME="pytest for test_soyoung_hospital_info_api.TestHospitalHomeV2API.test_invalid_ext_format Coverage Results" MODIFIED="1756101796988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PytestExecute$pytest_in_test_soyoung_hospital_info_api_py.coverage" NAME="pytest in test_soyoung_hospital_info_api.py Coverage Results" MODIFIED="1756103867074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PytestExecute$pytest_in_test_soyoung_hospital_info_api_py.coverage" NAME="pytest in test_soyoung_hospital_info_api.py Coverage Results" MODIFIED="1756105395816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PytestExecute$pytest_in_test_soyoung_doctor_info_api_py.coverage" NAME="pytest in test_soyoung_doctor_info_api.py Coverage Results" MODIFIED="1756108886080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PytestExecute$pytest_for_test_soyoung_hotpital_v2_api_TestHospitalHomeV2API_test_cache_and_performance.coverage" NAME="pytest for test_soyoung_hotpital_v2_api.TestHospitalHomeV2API.test_cache_and_performance Coverage Results" MODIFIED="1756104405830" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PytestExecute$pytest_for_test_soyoung_doctor_info_api_TestDoctorInfoBasicByDynamic842.coverage" NAME="pytest for test_soyoung_doctor_info_api.TestDoctorInfoBasicByDynamic842 Coverage Results" MODIFIED="1756110658623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PytestExecute$demo015.coverage" NAME="demo015 Coverage Results" MODIFIED="1754636426870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PytestExecute$pytest_for_test_soyoung_hospital_info_api_TestHospitalHomeV2API_test_missing_ext_field.coverage" NAME="pytest for test_soyoung_hospital_info_api.TestHospitalHomeV2API.test_missing_ext_field Coverage Results" MODIFIED="1756103850265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
