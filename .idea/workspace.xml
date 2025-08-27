@@ -401,7 +401,7 @@
       </console-settings>
     </option>
   </component>
-  <component name="RunManager" selected="Python.pdf_extract_mixed">
+  <component name="RunManager" selected="Python.pymysql_connect">
     <configuration name="pdf_extract_mixed" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python基础" />
       <option name="ENV_FILES" value="" />
@@ -417,6 +417,29 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../pdf_extract_mixed.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pymysql_connect" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python基础" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pymysql_connect.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -461,24 +484,6 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in test_soyoung_doctor_info_api.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="python基础" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_soyoung_doctor_info_api.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="pytest in test_zhealth_shop_api.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python基础" />
       <option name="ENV_FILES" value="" />
@@ -499,11 +504,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.pymysql_connect" />
         <item itemvalue="Python.pdf_extract_mixed" />
         <item itemvalue="Python tests.pytest in test_zhealth_shop_api.py" />
         <item itemvalue="Python tests.pytest for test_soyoung_doctor_info_api.TestDoctorInfoBasicByDynamic842.test_normal_request" />
         <item itemvalue="Python tests.pytest for test_soyoung_doctor_info_api.TestDoctorInfoBasicByDynamic842" />
-        <item itemvalue="Python tests.pytest in test_soyoung_doctor_info_api.py" />
       </list>
     </recent_temporary>
   </component>
