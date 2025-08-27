@@ -22,7 +22,7 @@ try:
     result = cursor.fetchall()
     if result:
         for row in result:
-            print(f"手机号: {row[0]}")
+            print(f"{row[0]}")
     else:
         print("未找到该用户")
 

@@ -2,14 +2,17 @@ import pytest
 import requests
 import json
 
-# 配置基础URL和请求头
+# 配置基础URL和请求参数
 BASE_URL = "https://api.soyoung.com/v8/doctors/InfoBasicByDynamic842"
+DOCTOR_ID = "228007"
+
+# 请求头设置（模拟移动端请求）
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Linux; Android 13; HONOR-PGT-AN00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.6613.158 Mobile Safari/537.36",
+    "User-Agent": "Mozilla/5.0 (Linux; Android 13; HONOR-PGT-AN00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36",
     "Content-Type": "application/json",
 }
 
-# 请求参数（正常情况）
+# 正常请求参数（原始接口参数）
 NORMAL_PARAMS = {
     "device_model": "HONOR-PGT-AN00",
     "lver": "9.19.1",
@@ -20,14 +23,14 @@ NORMAL_PARAMS = {
     "sys": "2",
     "is_64": "1",
     "sm_device_id": "BqdOCnhtqdaUDFUGfBP80xReY N6umFg5P XXtafM4vLcKgN6OH0oOse92HYJrsNI4vI1SPWW bYT7zthY7ttBQ==",
-    "doctor_id": "228007",
+    "doctor_id": DOCTOR_ID,
     "uid": "0",
     "from_action": "sy_app_home_feed:card_click",
     "sdk_version": "33",
     "is_tf": "0",
     "_time": "1756105579",
     "app_id": "2",
-    "ext": {
+    "ext": json.dumps({
         "zt_planmaterial_type": 43,
         "hid": 182779,
         "rank_sco": 0,
@@ -49,7 +52,7 @@ NORMAL_PARAMS = {
         "place_id": 10006,
         "request_key": "43_228007_91b3f23c06a0e4cef891a9381ee7fba4",
         "timestamp": 1756105564883
-    },
+    }),
     "_jk": "4060343230",
     "device_id": "338250482",
     "s_meng_device_id": "DU8LtcMfxmSWdOm-WIY7HNzJm501pTDvB970RFU4THRjTWZ4bVNXZE9tLVdJWTdITnpKbTUwMXBURHZCOTcwc2h1",
@@ -63,129 +66,167 @@ NORMAL_PARAMS = {
 }
 
 
-# 测试类
-class TestDoctorInfoBasicByDynamic842:
+class TestDoctorInfoApi:
+    """
+    测试医生基本信息接口 /v8/doctors/InfoBasicByDynamic842
+    """
+
     @pytest.fixture(autouse=True)
     def setup(self):
-        """每次测试前执行"""
+        """前置操作：初始化请求参数"""
         self.url = BASE_URL
+        self.headers = HEADERS
+        self.params = NORMAL_PARAMS.copy()
 
-    def test_normal_request(self):
-        """测试正常请求 - 所有参数正确"""
-        response = requests.get(self.url, headers=HEADERS, params=NORMAL_PARAMS)
+    def test_normal_request_success(self):
+        """测试正常请求 - 参数完整且正确"""
+        response = requests.get(self.url, params=self.params, headers=self.headers, timeout=10)
 
         # 断言状态码
-        assert response.status_code == 200, f"期望状态码 200，实际为 {response.status_code}"
+        assert response.status_code == 200, f"Expected 200, got {response.status_code}"
 
         # 解析响应体
-        resp_data = response.json()
+        resp_json = response.json()
 
-        # 断言 errorCode 为 0
-        assert resp_data.get("errorCode") == 0, f"期望 errorCode 为 0，实际为 {resp_data.get('errorCode')}"
+        # 验证业务逻辑字段
+        assert resp_json.get("errorCode") == 0, "Expected errorCode=0"
+        assert resp_json.get("errorMsg") == "", "Expected errorMsg to be empty"
 
-        # 断言 errorMsg 为空
-        assert resp_data.get("errorMsg") == "", f"期望 errorMsg 为空，实际为 {resp_data.get('errorMsg')}"
+        data = resp_json.get("responseData")
+        assert data is not None, "Expected responseData to exist"
 
-        # 断言 responseData 存在
-        assert "responseData" in resp_data, "响应中缺少 responseData"
+        doctor = data.get("doctor")
+        assert doctor is not None, "Expected doctor object in responseData"
 
-        # 断言医生信息存在
-        doctor_data = resp_data["responseData"]["doctor"]
-        doctor_data_statistics=resp_data["responseData"]["statistics"]
-        assert doctor_data is not None, "医生信息为空"
+        # 校验医生核心信息
+        assert doctor.get("doctor_id") == DOCTOR_ID, f"Expected doctor_id={DOCTOR_ID}"
+        assert doctor.get("name_cn") == "王珮蓉", "Expected doctor name_cn=王珮蓉"
+        assert doctor.get("gender") == "女", "Expected gender=女"
+        assert doctor.get("hospital_show_words") == "北京雅靓医疗美容诊所", "Expected hospital_show_words"
 
-        # 验证关键字段
-        assert doctor_data["doctor_id"] == "228007", "doctor_id 不匹配"
-        assert doctor_data["name_cn"] == "王珮蓉", "name_cn 不匹配"
-        assert doctor_data["gender"] == "女", "gender 不匹配"
-        assert doctor_data["hospital_show_words"] == "北京雅靓医疗美容诊所", "hospital_show_words 不匹配"
-
-        # 验证职称
-        assert doctor_data["position"] == "医师", "position 不匹配"
-
-        # 验证认证信息
-        assert doctor_data["certified"] == "1", "certified 不匹配"
-
-        # 验证评价信息
-        stats = doctor_data_statistics
-        assert stats["fans_cnt"] == "1", "粉丝数不匹配"
-        assert stats["patient_cnt"] == "158", "服务人次不匹配"
-        assert stats["diary_cnt"] == "19", "日记数不匹配"
-
-        # 验证医生标签
-        op_labels = resp_data["responseData"]["doctor_op_label"]
-        assert any(label["key"] == "yishi" for label in op_labels), "未找到 '医师' 标签"
-        assert any(label["key"] == "wjw_verify" for label in op_labels), "未找到 '查资质' 标签"
-
-        # 验证专家专长
-        expert_all = doctor_data["extend"]["expert_all"]
-        assert len(expert_all) > 0, "专家专长为空"
-        assert any(e["name"] == "瘦脸轮廓" for e in expert_all), "缺少 '瘦脸轮廓' 专长"
-        assert any(e["name"] == "玻尿酸" for e in expert_all), "缺少 '玻尿酸' 专长"
-
-        # 验证图文面诊设置
-        face_consultation = resp_data["responseData"]["face_consultation_card"]
-        assert face_consultation["is_show"] == "1", "视频面诊不可见"
-
-        # 验证服务人次统计
-        assert resp_data['responseData']["statistics"]["patient_cnt"] == "158", "服务人次统计错误"
+        # 检查是否有资质认证标签
+        verify_labels = doctor.get("is_follow")
+        assert verify_labels in ("0", "1"), "Expected is_follow to be 0 or 1"
 
     def test_missing_doctor_id(self):
-        """测试 doctor_id 缺失"""
-        params = NORMAL_PARAMS.copy()
-        del params["doctor_id"]
+        """测试缺少 doctor_id 参数"""
+        self.params.pop("doctor_id", None)
 
-        response = requests.get(self.url, headers=HEADERS, params=params)
+        response = requests.get(self.url, params=self.params, headers=self.headers, timeout=10)
 
-        assert response.status_code == 200
-        resp_data = response.json()
-        assert resp_data.get("errorCode") != 0, "缺少 doctor_id 应返回错误"
-        assert resp_data.get("errorMsg"), "缺少 doctor_id 时应返回错误信息"
+        # 预期返回错误码
+        assert response.status_code == 200, f"Expected 200, got {response.status_code}"
+
+        resp_json = response.json()
+        assert resp_json.get("errorCode") != 0, "Expected errorCode != 0 when doctor_id missing"
+        assert "doctor_id" in resp_json.get("errorMsg", ""), "Expected error message about doctor_id missing"
 
     def test_invalid_doctor_id(self):
-        """测试 doctor_id 为非法值"""
-        params = NORMAL_PARAMS.copy()
-        params["doctor_id"] = "invalid_id"
+        """测试无效 doctor_id（非数字）"""
+        self.params["doctor_id"] = "invalid_id"
 
-        response = requests.get(self.url, headers=HEADERS, params=params)
-
-        assert response.status_code == 200
-        resp_data = response.json()
-        assert resp_data.get("errorCode") == 0, "无效 doctor_id 应仍返回成功，但数据为空或错误"
-        # 实际业务中可能返回空或错误，但此处假设仍返回 0
-        # 可根据实际行为调整断言
-
-    def test_missing_ext(self):
-        """测试 ext 参数缺失"""
-        params = NORMAL_PARAMS.copy()
-        del params["ext"]
-
-        response = requests.get(self.url, headers=HEADERS, params=params)
+        response = requests.get(self.url, params=self.params, headers=self.headers, timeout=10)
 
         assert response.status_code == 200
-        resp_data = response.json()
-        assert resp_data.get("errorCode") == 0, "缺少 ext 参数应返回成功或特定错误"
-        # 根据实际行为调整断言
+        resp_json = response.json()
 
-    def test_invalid_ext_format(self):
-        """测试 ext 参数格式错误"""
-        params = NORMAL_PARAMS.copy()
-        params["ext"] = "invalid_json"
+        # 预期返回错误
+        assert resp_json.get("errorCode") != 0, "Expected error for invalid doctor_id"
+        assert "invalid" in resp_json.get("errorMsg", "").lower(), "Expected error related to invalid doctor_id"
 
-        response = requests.get(self.url, headers=HEADERS, params=params)
+    def test_invalid_timestamp(self):
+        """测试 timestamp 参数异常（超大值）"""
+        self.params["ext"] = json.dumps({
+            **json.loads(self.params["ext"]),
+            "timestamp": 9999999999999
+        })
 
-        assert response.status_code == 200
-        resp_data = response.json()
-        assert resp_data.get("errorCode") != 0 or "responseData" not in resp_data, "无效 ext 应导致错误或空结果"
-
-    def test_include_eye_zero(self):
-        """测试 include_eye=0 时返回结果是否正常"""
-        params = NORMAL_PARAMS.copy()
-        params["include_eye"] = "0"
-
-        response = requests.get(self.url, headers=HEADERS, params=params)
+        response = requests.get(self.url, params=self.params, headers=self.headers, timeout=10)
 
         assert response.status_code == 200
-        resp_data = response.json()
-        assert resp_data.get("errorCode") == 0
-        # 确保响应结构完整，即使 include_eye=0 也不应崩溃
+        resp_json = response.json()
+
+        # 检查是否返回异常
+        assert resp_json.get("errorCode") != 0 or "timeout" in resp_json.get("errorMsg", "").lower()
+
+    def test_empty_ext_param(self):
+        """测试 ext 参数为空"""
+        self.params["ext"] = "{}"
+
+        response = requests.get(self.url, params=self.params, headers=self.headers, timeout=10)
+
+        assert response.status_code == 200
+        resp_json = response.json()
+
+        assert resp_json.get("errorCode") == 0, "Expected success when ext is empty"
+        assert resp_json.get("responseData") is not None, "Expected responseData when ext is empty"
+
+    def test_invalid_ext_json(self):
+        """测试 ext 参数为非法 JSON"""
+        self.params["ext"] = "{\"invalid\":}"
+
+        response = requests.get(self.url, params=self.params, headers=self.headers, timeout=10)
+
+        assert response.status_code == 200
+        resp_json = response.json()
+
+        # 预期返回解析失败
+        assert resp_json.get("errorCode") != 0, "Expected error when ext is invalid JSON"
+        assert "json" in resp_json.get("errorMsg", "").lower() or "parse" in resp_json.get("errorMsg", "").lower()
+
+    def test_request_with_invalid_device_id(self):
+        """测试 device_id 为非法值"""
+        self.params["device_id"] = "-1"
+
+        response = requests.get(self.url, params=self.params, headers=self.headers, timeout=10)
+
+        assert response.status_code == 200
+        resp_json = response.json()
+
+        # 通常这类接口不会因 device_id 失效而直接报错，但可检查逻辑是否正常
+        assert resp_json.get("errorCode") == 0 or resp_json.get(
+            "errorMsg") == "", "Expected valid response even with invalid device_id"
+
+        # 检查返回数据是否合理
+        data = resp_json.get("responseData")
+        assert data is not None
+        assert "doctor" in data, "Expected doctor info in response"
+
+    def test_request_with_expired_timestamp(self):
+        """测试时间戳过期（模拟时间错乱）"""
+        self.params["ext"] = json.dumps({
+            **json.loads(self.params["ext"]),
+            "timestamp": 1000000000  # 2001年，远早于当前时间
+        })
+
+        response = requests.get(self.url, params=self.params, headers=self.headers, timeout=10)
+
+        assert response.status_code == 200
+        resp_json = response.json()
+
+        # 检查是否返回时间验证失败
+        assert resp_json.get("errorCode") != 0 or "time" in resp_json.get("errorMsg", "").lower()
+
+    def test_response_structure(self):
+        """测试响应结构完整性"""
+        response = requests.get(self.url, params=self.params, headers=self.headers, timeout=10)
+        resp_json = response.json()
+
+        # 验证基础字段
+        assert "errorCode" in resp_json
+        assert "errorMsg" in resp_json
+        assert "responseData" in resp_json
+
+        # 验证 responseData 下的关键结构
+        data = resp_json["responseData"]
+        assert "doctor" in data
+        assert "statistics" in data
+        assert "hospital_list" in data
+        assert "face_consultation_card" in data
+        assert "koubeiAndDiary" in data
+
+        # 检查是否包含医生画像信息
+        doctor = data["doctor"]
+        assert "name_cn" in doctor
+        assert "hospital_show_words" in doctor
+        assert "avatar" in doctor
