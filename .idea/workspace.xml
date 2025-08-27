@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91744376-bffd-46e5-b6b4-570ba7f294f1" name="Default Changelist" comment="0987" />
+    <list default="true" id="91744376-bffd-46e5-b6b4-570ba7f294f1" name="Default Changelist" comment="0987">
+      <change afterPath="$PROJECT_DIR$/pymysql_connect.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo009.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo010.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo011.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo012.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo013.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo015.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo022.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/git.py" beforeDir="false" afterPath="$PROJECT_DIR$/git.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_zhealth_shop_api.py" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -550,7 +562,7 @@
       <workItem from="1755574957531" duration="2072000" />
       <workItem from="1755652917275" duration="14566000" />
       <workItem from="1756085595974" duration="6382000" />
-      <workItem from="1756199834741" duration="1888000" />
+      <workItem from="1756199834741" duration="3977000" />
     </task>
     <task id="LOCAL-00002" summary="1">
       <created>1681890277368</created>
@@ -895,7 +907,7 @@
       <option name="project" value="LOCAL" />
       <updated>1693811188553</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TestHistory">
