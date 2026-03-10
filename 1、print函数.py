@@ -1,4 +1,4 @@
-#0001#
+#0001009#
 #数据输入文件
 fb=open('./text.txt','a+')#文件不存在就创建，在的话就追加内容
 print('helloword',file=fb)
